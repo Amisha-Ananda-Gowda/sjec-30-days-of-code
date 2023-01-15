@@ -4,7 +4,7 @@ int main()
 {
     char name[25];
     printf("Enter your Name:");
-    scanf("%[^\n]s",name);
+    scanf("%s",name);
     if(strlen(name))
     printf("Hello,%s!",name);
     else

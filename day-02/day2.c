@@ -1,24 +1,40 @@
-
 #include<stdio.h>
 void main()
 {
-    int n,a[100],sum=0,i;
-    float avg;
-    printf("Enter the number of elements in the array\n");
+    int n,i,j,side;
+    printf("Enter the number of triangles\n");
     scanf("%d",&n);
-    printf("Enter the array elements:\n");
-    for(i=0;i<n;i++)
-    {
-        scanf("%d",&a[i]);
-        sum=sum+a[i];
+    int a[n][3];
+    printf("Enter the sides of triangle\n");
+    for(i=1;i<=n;i++){
+        for(j=0;j<3;j++){
+            scanf("%d",&a[i][j]);
+            }
     }
-    avg=sum/n;
-    for(i=0;i<n;i++)
-{
-if(a[i]>avg)
-{
-printf("%d ",a[i]);
-}
-
-}
+    for(i=1;i<=n;i++){
+       if(i%3==0){
+        if(a[i][0]>a[i][1]&&a[i][0]>a[i][2])
+        side=a[i][0];
+        else if(a[i][1]>a[i][0]&&a[i][1]>a[i][2])
+        side=a[i][1];
+        else side=a[i][2];
+             printf("%d\n",side);
+    }
+    else if(i%3==1){
+        if(a[i][0]<a[i][1]&&a[i][0]<a[i][2])
+        side=a[i][0];
+        else if(a[i][1]<a[i][0]&&a[i][1]<a[i][2])
+        side=a[i][1];
+        else side=a[i][2];
+            printf("%d\n",side);
+    }
+    else{
+         if((a[i][0]<a[i][1]&&a[i][0]>a[i][2])||(a[i][0]>a[i][1]&&a[i][0]<a[i][2]))
+        side=a[i][0];
+        else if((a[i][1]<a[i][0]&&a[i][1]>a[i][2])||(a[i][1]>a[i][0]&&a[i][1]<a[i][2]))
+        side=a[i][1];
+        else side=a[i][2];
+        printf("%d\n",side);
+    }
+    }
 }
