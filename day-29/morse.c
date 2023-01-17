@@ -1,0 +1,123 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main(){
+   char s[1000];
+    int i;
+    printf("Enter the String to be encoded into morse code :\n");
+    fflush(stdin);
+    gets(s);
+    printf("Morse Code:\n");
+    for(i=0;i<strlen(s);i++) {
+          if(s[i]==' ')
+          printf("/ ");
+          else if(s[i]=='A'||s[i]=='a')
+          printf(".- ");
+           else if(s[i]=='B'||s[i]=='b')
+          printf("-... ");
+           else if(s[i]=='C'||s[i]=='c')
+          printf("-.-. ");
+           else if(s[i]=='D'||s[i]=='d')
+          printf("-.. ");
+           else if(s[i]=='E'||s[i]=='e')
+          printf(". ");
+           else if(s[i]=='F'||s[i]=='f')
+          printf("..-. ");
+           else if(s[i]=='G'||s[i]=='g')
+          printf("--. ");
+           else if(s[i]=='H'||s[i]=='h')
+          printf(".... ");
+           else if(s[i]=='I'||s[i]=='i')
+          printf(".. ");
+           else if(s[i]=='J'||s[i]=='j')
+          printf(".--- ");
+           else if(s[i]=='K'||s[i]=='k')
+          printf("-.- ");
+           else if(s[i]=='L'||s[i]=='l')
+          printf(".-.. ");
+           else if(s[i]=='M'||s[i]=='m')
+          printf("-- ");
+           else if(s[i]=='N'||s[i]=='n')
+          printf("-. ");
+           else if(s[i]=='O'||s[i]=='o')
+          printf("--- ");
+           else if(s[i]=='P'||s[i]=='p')
+          printf(".--. ");
+           else if(s[i]=='Q'||s[i]=='q')
+          printf("--.- ");
+           else if(s[i]=='R'||s[i]=='r')
+          printf(".-. ");
+           else if(s[i]=='S'||s[i]=='s')
+          printf("... ");
+           else if(s[i]=='T'||s[i]=='t')
+          printf("- ");
+           else if(s[i]=='U'||s[i]=='u')
+          printf("..- ");
+           else if(s[i]=='V'||s[i]=='v')
+          printf("...- ");
+           else if(s[i]=='W'||s[i]=='w')
+          printf(".-- ");
+           else if(s[i]=='X'||s[i]=='x')
+          printf("-..- ");
+           else if(s[i]=='Y'||s[i]=='y')
+          printf("-.-- ");
+          else if(s[i]=='Z'||s[i]=='z')
+          printf("--.. ");
+          else if(s[i]==1)
+          printf(".---- ");
+          else if(s[i]==2)
+          printf("..--- ");
+          else if(s[i]==3)
+          printf("...-- ");
+          else if(s[i]==4)
+          printf("....- ");
+          else if(s[i]==5)
+          printf("..... ");
+          else if(s[i]==6)
+          printf("-.... ");
+          else if(s[i]==7)
+          printf("--... ");
+           else if(s[i]==8)
+          printf("---.. ");
+           else if(s[i]==9)
+          printf("----. ");
+           else if(s[i]==0)
+          printf("----- ");
+           else if(s[i]=='.')
+          printf(".-.-.- ");
+          else if(s[i]=',')
+          printf("--..-- ");
+          else if(s[i]=='?')
+          printf("..--..");
+          else if(s[i]==';')
+          printf("-.-.- ");
+           else if(s[i]==':')
+           printf("---... ");
+           else if(s[i]=='/')
+           printf("-..-. ");
+           else if(s[i]=='-')
+           printf("-....- ");
+           else if(s[i]=='(')
+           printf("-.--. ");
+           else if(s[i]==')')
+           printf("-.--.- ");
+           else if(s[i]=='_')
+           printf("..--.- ");
+           else if(s[i]=='@')
+           printf(".--.-. ");
+           else if(s[i]=='!')
+           printf("-.-.-- ");
+           else if(s[i]=='&')
+           printf(".-... ");
+           else if(s[i]=='=')
+           printf("-...- ");
+           else if(s[i]=='+')
+           printf(".-.-. ");
+           else if(s[i]=='"')
+           printf(".-..-. ");
+           else if(s[i]=='$')
+           printf("...-..- ");
+           else 
+           continue;
+    }  
+}
